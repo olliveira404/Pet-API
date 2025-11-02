@@ -3,8 +3,9 @@ package com.jader.api.pet_api.model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
+import lombok.Data;
 
-
+@Data
 @Entity
 @Table(name = "pets")
 public class Pet {
@@ -28,4 +29,6 @@ public class Pet {
 
     @NotBlank(message = "Tutor é obrigatório")
     private String tutor;
+
+
 }
